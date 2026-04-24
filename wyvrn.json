@@ -3,7 +3,7 @@
   "version": "1.92.7.0",
   "schemaVersion": 2,
   "kind": "StaticLib",
-  "description": "TODO: one-line description of imgui",
+  "description": "Bloat-free immediate-mode GUI (core, no backends)",
   "dependencies": {},
   "build": {
     "system": "cmake",
