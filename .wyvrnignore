@@ -1,0 +1,29 @@
+# Version control / editor / local
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+.github/
+.vscode/
+.idea/
+
+# Local build output + wyvrnpm-generated files
+build/
+wyvrn_internal/
+wyvrn.lock
+CMakePresets.json
+CMakeUserPresets.json
+*.tmp
+*.log
+
+# Static/Dynamic lib: drop tests/docs/examples/CI, keep CMakeLists.txt
+test/
+tests/
+example/
+examples/
+doc/
+docs/
+docker/
+bin/
+appveyor.yml
+.travis.yml

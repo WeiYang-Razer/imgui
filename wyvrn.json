@@ -1,0 +1,19 @@
+{
+  "name": "imgui",
+  "version": "1.92.7.0",
+  "schemaVersion": 2,
+  "kind": "StaticLib",
+  "description": "TODO: one-line description of imgui",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [],
+    "installDir": "install"
+  }
+}
