@@ -1,0 +1,36 @@
+{
+  "name": "imgui",
+  "version": "1.92.7.0",
+  "schemaVersion": 2,
+  "kind": "StaticLib",
+  "description": "Bloat-free immediate-mode GUI (docking branch, core + selectable platform/renderer backends)",
+  "options": {
+    "docking": {
+      "default": true,
+      "allowed": [true]
+    },
+    "platform": {
+      "default": "none",
+      "allowed": ["glfw", "win32", "none"]
+    },
+    "renderer": {
+      "default": "directx12",
+      "allowed": ["directx12", "directx11", "opengl", "vulkan", "none"]
+    }
+  },
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DIMGUI_PLATFORM=${options.platform}",
+      "-DIMGUI_RENDERER=${options.renderer}"
+    ],
+    "installDir": "install"
+  }
+}
