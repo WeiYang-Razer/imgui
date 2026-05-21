@@ -1,6 +1,6 @@
 {
   "name": "imgui",
-  "version": "1.92.7.0",
+  "version": "1.92.7.1",
   "schemaVersion": 2,
   "kind": "StaticLib",
   "description": "Bloat-free immediate-mode GUI (docking branch, core + selectable platform/renderer backends)",
@@ -19,6 +19,9 @@
     }
   },
   "dependencies": {},
+  "buildDependencies": {
+    "glfw3": { "version": "^3.3.0.0", "whenOption": "platform=glfw" }
+  },
   "build": {
     "system": "cmake",
     "configs": [
